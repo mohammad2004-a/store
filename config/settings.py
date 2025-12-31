@@ -29,6 +29,11 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
+PROJECT_APP = [
+    "store",
+    "accounts",
+]
+
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -37,6 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    *PROJECT_APP,
 ]
 
 MIDDLEWARE = [
@@ -67,6 +73,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = "config.wsgi.application"
+AUTH_USER_MODEL = "accounts.UserData"
 
 
 # Database
