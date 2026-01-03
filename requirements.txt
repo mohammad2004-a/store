@@ -1,9 +1,12 @@
 Django
 phonenumbers
 django-phonenumber-field
-
-
-
+djangorestframework
+markdown
+django-filter
+djangorestframework-simplejwt
+django-environ
+drf-spectacular
 
 
 # [dev-packages]
