@@ -35,6 +35,7 @@ PROJECT_APP = [
     "store",
     "accounts",
     "rest_framework",
+    "drf_spectacular",
 ]
 
 
@@ -126,4 +127,4 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
-from .sub_setting import *
+from .sub_setting import *  # noqa

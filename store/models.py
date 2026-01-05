@@ -61,7 +61,7 @@ class Book(BaseModel):
     description = models.TextField(null=True, blank=True)
     isbn = models.IntegerField(null=False, blank=True)
     publication = models.ForeignKey(Publication, on_delete=models.CASCADE)
-    amount = models.IntegerField(null=False, default=1)
+    amount = models.PositiveIntegerField(null=False, default=1)
 
     def __str__(self):
         return f"{self.title} | {self.author} | {self.publication} | {self.amount}"
